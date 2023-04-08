@@ -45,3 +45,13 @@
         </div>
     </div>
 ```
+
+3. Module 
+- import the HttpClientModule from @angular/common/http,
+```
+import { HttpClientModule } from '@angular/common/http';
+```
+- add it to the @NgModule.imports array.
+```
+imports:[HttpClientModule,  ]
+```
