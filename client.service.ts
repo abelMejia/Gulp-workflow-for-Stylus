@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Options } from './options.interface';
+import { Options } from '../interfaces/options.interface';
 
 const baseUrl = environment.serverBaseUrl;
 

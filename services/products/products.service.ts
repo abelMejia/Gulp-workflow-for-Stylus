@@ -1,7 +1,7 @@
-import { HttpEvent, HttpParams } from '@angular/common/http';
+import { HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
-import { ClientService } from './client.service';
+import {  Observable } from 'rxjs';
+import { ClientService } from '../client.service';
 
 @Injectable({
   providedIn: 'root'
