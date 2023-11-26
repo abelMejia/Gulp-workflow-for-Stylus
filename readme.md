@@ -1,27 +1,27 @@
-# Settings
-1. add the next code in `app.component.ts`.
-```
-  error$ = this.errorHandlingService.getErrorSubject();
+# X
 
-  // Inject a service
-  constructor(private errorHandlingService: ErrorHandlingService){}
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-  // In ngOnInit 
-  this.error$.subscribe((error: any) => {  this.errorHandlingService.handleError(error); });
-```
+## Development server
 
-2. We also need to provide the interceptor we created in `app.module.ts`
-```
-    providers: [...HttpInterceptorProviders],
-```
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-# Usage
-1. In catchError operator
-```
-    getAll(): Observable<any> {
-        return this.clientService.get('products2')
-        .pipe(
-            catchError(err => of(this.errorHandlingService.setError(err)))
-        );
-    }
-```
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
