@@ -5,7 +5,8 @@ import { ShopComponent } from './shop.component';
 const Routes = [
   {
      path: '',
-     component: ShopComponent
+     component: ShopComponent,
+     title: 'Shop'
   }
 ]
 

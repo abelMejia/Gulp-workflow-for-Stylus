@@ -5,7 +5,8 @@ import { CartComponent } from './cart.component';
 const Routes = [
   {
      path: '',
-     component: CartComponent
+     component: CartComponent,
+     title: 'Cart'
   }
 ]
 

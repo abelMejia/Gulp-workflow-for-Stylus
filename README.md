@@ -3,13 +3,24 @@
 2. set the code below.
 ```
   import { routes } from './app.routes';
+
 ```
-3. remove the code below.
+3. Provide a custom title strategy by extending the TitleStrategy.
+```
+    import { TemplatePageTitleStrategy } from './title.service';
+
+    providers: [
+        {provide: TitleStrategy, useClass: TemplatePageTitleStrategy},
+    ]
+```
+
+4. remove the code below.
 ```
   const routes: Routes = [];
 ```
 
-4. Insert the below code in your `app template`
+
+5. Insert the below code in your `app template`
 ```
     <button type="button" routerLink="/login" routerLinkActive="active">Login</button>
     <button type="button" routerLink="/home" routerLinkActive="active">Home</button>
