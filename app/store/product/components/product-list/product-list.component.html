@@ -1,0 +1,6 @@
+<ul *ngIf="products.length > 0">
+    <li *ngFor="let product of products">
+        <a [routerLink]="['details', product.id]">{{product.name}}</a>
+        <p>{{product.description}}</p>
+    </li>
+</ul>
